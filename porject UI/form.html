@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+   function validation()
+   { 
+       var a=document.getElementById("user").value; 
+       var b=document.getElementById("userpassword").value;
+       if(a=="kaushal" && b=="password")
+       {
+           document.getElementById("msg").innerHTML=`Welcome ${a}`;
+           document.getElementById("msg").style.color="Green";
+           
+       }
+       else
+       {
+           document.getElementById("msg").innerHTML="Wrong details";
+           document.getElementById("msg").style.color="Red";
+           document.getElementById("msg").style.fontSize="x-large";
+       }
+   }
+   </script>
+</head>
+<body>
+   <form>
+        <center><fieldset style="width: 300px; border-color: brown; border-width: 1px;background-color: rgb(129, 150, 93);">
+            <legend style="color: red;">Authentication</legend>
+            <table border="0">
+                  <tr>
+                      <td>User Name</td>
+                      <td><input type="text" id="user" placeholder="Enter user name"></td>
+                    </tr>
+                    <tr>
+                          <td>User Password</td>
+                          <td><input type="password" id="userpassword" placeholder="Enter password"></td>
+                    </tr>       
+                    <tr>
+                    <td colspan="2" align="center"><input type="button" value="login" onclick="validation()"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"> <p id="msg"></p></td>
+                    </tr>  
+         
+                </table>
+                   </fieldset>
+          </center></form>
+</body>
+</html>

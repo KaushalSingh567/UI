@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+   function validation()
+   { 
+       var a=document.getElementById("user").value; 
+       var b=document.getElementById("userpassword").value;
+       var c=document.getElementById("cp").value;
+       var d=document.getElementById("email").value;
+       if(a=="kaushal" && b=="password" && b==c && d=="kaushalsingh659.ks@gmail.com")
+       {
+           document.getElementById("msg").innerHTML=`Welcome ${a}`;
+           document.getElementById("msg").style.color="Green";
+           
+       }
+       else
+       {
+           document.getElementById("msg").innerHTML="Wrong details";
+           document.getElementById("msg").style.color="Red";
+           document.getElementById("msg").style.fontSize="x-large";
+       }
+   }
+   </script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+   <form>
+        <center><fieldset style="width: 300px; border-color: rgb(57, 196, 154); border-width: 1px;background-color: rgb(150, 104, 119);">
+            <legend style="color: red;">Authentication</legend>
+            <table class="table">
+                 <thead> <tr>
+                      <td>User Name</td>
+                      <td><input type="text" id="user" placeholder="Enter user name"></td>
+                    </tr></thead>
+                    <tr>
+                          <td>User Password</td>
+                          <td><input type="password" id="userpassword" placeholder="Enter password"></td>
+                    </tr>     
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" id="cp" placeholder="Re-Enter password"></td>
+                  </tr>   
+                  <tr>
+                    <td>Email-id</td>
+                    <td><input type="email" id="email" placeholder="Enter Email-id"></td>
+              </tr> 
+                    <tr>
+                    <td colspan="2" align="center"><input type="button" value="login" onclick="validation()"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"> <p id="msg"></p></td>
+                    </tr>  
+         
+                </table>
+                   </fieldset>
+          </center></form>
+</body>
+</html>
