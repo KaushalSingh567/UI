@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="C:\Users\Win-10\OneDrive\Desktop\porject UI\form3.js"></script></>
+</head>
+<body>
+    <style>::placeholder{color: rgb(189, 218, 241);}</style>
+    <form style="width: 600px; height: 400px; ">
+        <fieldset>
+        <table style="width: 400px; "  border="2px">
+            <tr>
+                <td>
+                    Name 
+                </td>
+                <td>
+                    <input type="text"  maxlength="12" minlength="3" id="name" size="25" placeholder="Enter name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Age
+                </td>
+                <td>
+                    <input type="number" id="age" placeholder="Age">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    Male<input type="radio" name="Gender" id="male">
+                    Female<input type="radio" name="Gender" id="female">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Hobbies</td>
+                <td>Cricket<input type="checkbox" id="cricket">
+                    Football<input type="checkbox" id="football">
+                    computerGame<input type="checkbox" id="computerGame"></td>
+            </tr>
+            <tr>
+                <td>D.O.B</td>
+                <td><input type="date" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> 
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea type="textarea" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+            <td>
+                <select name="Qualification" id="Qul">
+                    <optgroup label="Graduate">
+                    <option value="Bca">Bca</option>
+                    <option value="B-Tech">B-Tech</option></optgroup>
+                    <optgroup label="Post Graduate"><option value="MCA">MCA</option>
+                    <option value="MBA">MBA</option></optgroup>
+                </select>
+            </td></tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="State" id="st">
+                    <option value="UP">UP</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Banglore">Banglore</option>
+                </select>
+                </td>
+           </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="file"> 
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Submit" onclick="validate()">
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
