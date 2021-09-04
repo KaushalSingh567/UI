@@ -1,0 +1,27 @@
+<html>
+    <head>
+      <p id="demo">hello</p>
+        </head>
+    <body>
+ <script>
+   fetch("abcd.json").then(response => response.json())
+   .then(result =>
+   {
+       document.write("<table border='2'>")
+       for(x in result)
+       {  
+           var data = `<tr> 
+                    <td>${result[x].id}</td>
+          <td>${result[x].name}</td>
+          <td>${result[x].username}</td>
+          <td>${result[x].email}</td>
+          <td>${result[x].address.street}</td>
+          </tr>`
+          document.write(data)
+          }
+          document.write("<table>")
+   })
+    .catch(error=>document.getElementById("demo").innerHTML=`<h1>error</h1>`);
+        </script>
+    </body>
+</html>
